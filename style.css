@@ -16,7 +16,58 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.header {
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    display: grid;
+    grid-template-areas: "hleft hcenter hright";
+    align-self: flex-start;
+    padding: 2em;
+    align-items: center;
+}
+.hlinks {
+    padding: 0.5em;
+}
 
+.hleft {
+    justify-self: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hright {
+    justify-self: self-end;
+    display: grid;
+    grid-template-columns: 4em 5em 4em 6em;
+    align-items: center;
+}
+
+.apps {
+    height: 30px;
+    width: 30px;
+    object-fit: none;
+    background: url(i1_1967ca6a.png) -132px -38px;
+    opacity: 0.55;
+}
+ .apps:hover {
+     opacity: 0.85;
+ }
+.signin {
+}
+
+#stext {
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    color: #fff;
+    background-image: linear-gradient(#4387fd, #4683ea);
+    border-radius: 2px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+#stext:hover {
+    box-shadow: 0px 1px 0.5px -1px rgb(45, 45, 45);
+}
 .footer {
     height: 30px;
     border-top: 1px solid #e4e4e4;
